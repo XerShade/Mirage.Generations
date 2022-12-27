@@ -1,4 +1,4 @@
-﻿using Mirage.Generations.Client;
+﻿using Mirage.Generations.Client.MonoGame;
 
-using var game = new MirageClient();
+using var game = new MirageGame();
 game.Run();

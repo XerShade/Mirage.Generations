@@ -1,18 +1,19 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using Mirage.Generations.Client.MonoGame.Interfaces;
 
-namespace Mirage.Generations.Client
+namespace Mirage.Generations.Client.MonoGame
 {
-    public class MirageClient : Game
+    public class MirageGame : Game, IMirageGame
     {
         private GraphicsDeviceManager graphics;
         private SpriteBatch spriteBatch;
 
-        public MirageClient()
+        public MirageGame()
         {
             graphics = new GraphicsDeviceManager(this);
-            Content.RootDirectory = "Content";
+            Content.RootDirectory = "MonoGame\\Content";
             IsMouseVisible = true;
         }
 
