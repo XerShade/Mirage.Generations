@@ -4,10 +4,9 @@
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <BaseOutputPath>$(SolutionDir)bin\</BaseOutputPath>
+    <BaseOutputPath>$(SolutionDir)bin\$(AssemblyName)</BaseOutputPath>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
-    <UseCommonOutputDirectory>true</UseCommonOutputDirectory>
     <Title>$(AssemblyName)</Title>
     <Authors>XerShade</Authors>
     <Company>XerShade's Corners</Company>
@@ -19,7 +18,7 @@
     <RepositoryUrl>https://github.com/XerShade/Mirage.Generations</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>mirage,generations,csharp,C#,online,game,engine</PackageTags>
-    <PackageOutputPath>$(SolutionDir)pkg\</PackageOutputPath>
+    <PackageOutputPath>$(SolutionDir)pkg\$(AssemblyName)</PackageOutputPath>
     <AssemblyVersion>$(VersionPrefix)</AssemblyVersion>
     <FileVersion>$(VersionPrefix)</FileVersion>
     <Version>0.1.0</Version>
